@@ -1,0 +1,916 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Himanshu Tomar | Portfolio</title>
+    <meta name="description" content="Portfolio of Himanshu Tomar — Aspiring Software Engineer, AI Enthusiast, and B.Tech CSE student at Lovely Professional University.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Particle Canvas Background -->
+    <canvas id="particles-canvas"></canvas>
+
+    <!-- Custom Cursor -->
+    <div class="cursor-glow" id="cursor-glow"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-logo">
+            <span class="logo-text">HT</span>
+        </div>
+        <ul class="nav-links" id="nav-links">
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#skills" class="nav-link">Skills</a></li>
+            <li><a href="#work" class="nav-link">Projects</a></li>
+            <li><a href="#cv" class="nav-link">CV</a></li>
+            <li><a href="#certifications" class="nav-link">Certificates</a></li>
+            <li><a href="#activities" class="nav-link">Extra Curricular Activities</a></li>
+            <li><a href="#education" class="nav-link">Education</a></li>
+            <li><a href="#contact" class="nav-link">Contact Me</a></li>
+        </ul>
+        <div class="nav-actions">
+            <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+                <i class="fas fa-moon" id="theme-icon"></i>
+            </button>
+            <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <p class="hero-greeting animate-on-scroll">Hello, I'm</p>
+                <h1 class="hero-name animate-on-scroll">
+                    <span class="name-first">Himanshu</span>
+                    <span class="name-last">Tomar</span>
+                </h1>
+                <div class="hero-tagline animate-on-scroll">
+                    <span class="typing-text" id="typing-text"></span>
+                    <span class="typing-cursor">|</span>
+                </div>
+                <p class="hero-description animate-on-scroll">
+                    Building intelligent solutions at the intersection of AI &amp; Software Engineering.
+                </p>
+                <div class="hero-cta animate-on-scroll">
+                    <a href="#work" class="btn btn-primary">
+                        <span>View My Work</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <a href="#contact" class="btn btn-outline">
+                        <span>Get In Touch</span>
+                    </a>
+                </div>
+                <div class="hero-social animate-on-scroll">
+                    <a href="https://github.com/Himanshutomar03" target="_blank" rel="noopener" class="social-link" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/himanshu-tomar0311/" target="_blank" rel="noopener" class="social-link" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="mailto:himanshutomar297@gmail.com" class="social-link" aria-label="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="hero-visual animate-on-scroll">
+                <div class="avatar-container" id="avatar-container">
+                    <div class="avatar-glow"></div>
+                    <div class="avatar-3d" id="avatar-3d">
+                        <div class="avatar-ring ring-1"></div>
+                        <div class="avatar-ring ring-2"></div>
+                        <div class="avatar-ring ring-3"></div>
+                        <div class="avatar-core">
+                            <span class="avatar-initials">HT</span>
+                        </div>
+                    </div>
+                    <div class="floating-badge badge-1">
+                        <i class="fas fa-brain"></i>
+                        <span>AI</span>
+                    </div>
+                    <div class="floating-badge badge-2">
+                        <i class="fas fa-code"></i>
+                        <span>Dev</span>
+                    </div>
+                    <div class="floating-badge badge-3">
+                        <i class="fas fa-chart-line"></i>
+                        <span>ML</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-mouse">
+                <div class="scroll-wheel"></div>
+            </div>
+            <span>Scroll Down</span>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section about" id="about">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-tag">About</span>
+                <h2 class="section-title">About</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="about-content">
+                <div class="about-image animate-on-scroll">
+                    <div class="about-img-wrapper">
+                        <div class="about-img-placeholder">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="about-img-border"></div>
+                    </div>
+                    <div class="about-experience-badge">
+                        <span class="exp-number">3+</span>
+                        <span class="exp-text">Years of<br>Learning</span>
+                    </div>
+                </div>
+                <div class="about-text animate-on-scroll">
+                    <h3>A passionate developer &amp; AI enthusiast.</h3>
+                    <p>
+                        I'm <strong>Himanshu Tomar</strong>, a B.Tech Computer Science &amp; Engineering student at 
+                        <strong>Lovely Professional University</strong>, Punjab. I'm deeply passionate about building 
+                        intelligent, user-centric software solutions that make a real impact.
+                    </p>
+                    <p>
+                        My interests span across <strong>Artificial Intelligence</strong>, <strong>Machine Learning</strong>, 
+                        and <strong>Full-Stack Web Development</strong>. I love working on challenging projects that push 
+                        boundaries and solve real-world problems — from building domain-specific RAG chatbots to stock 
+                        price prediction systems.
+                    </p>
+                    <p>
+                        When I'm not coding, you'll find me exploring new AI research papers, participating in hackathons, 
+                        or contributing to open-source projects.
+                    </p>
+                    <div class="about-info-grid">
+                        <div class="about-info-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Punjab, India</span>
+                        </div>
+                        <div class="about-info-item">
+                            <i class="fas fa-graduation-cap"></i>
+                            <span>B.Tech CSE</span>
+                        </div>
+                        <div class="about-info-item">
+                            <i class="fas fa-university"></i>
+                            <span>LPU</span>
+                        </div>
+                        <div class="about-info-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>himanshutomar297@gmail.com</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section skills" id="skills">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-tag">Skills</span>
+                <h2 class="section-title">Skills</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="skills-container">
+                <!-- Programming Languages -->
+                <div class="skill-category animate-on-scroll">
+                    <h3 class="skill-category-title">
+                        <i class="fas fa-code"></i>
+                        Languages
+                    </h3>
+                    <div class="skill-items">
+                        <div class="skill-item" data-skill="90">
+                            <div class="skill-icon"><i class="fab fa-python"></i></div>
+                            <span class="skill-name">Python</span>
+                            <div class="skill-bar"><div class="skill-progress" data-width="90"></div></div>
+                        </div>
+                        <div class="skill-item" data-skill="80">
+                            <div class="skill-icon"><i class="fab fa-java"></i></div>
+                            <span class="skill-name">Java</span>
+                            <div class="skill-bar"><div class="skill-progress" data-width="80"></div></div>
+                        </div>
+                        <div class="skill-item" data-skill="85">
+                            <div class="skill-icon"><i class="fab fa-js-square"></i></div>
+                            <span class="skill-name">JavaScript</span>
+                            <div class="skill-bar"><div class="skill-progress" data-width="85"></div></div>
+                        </div>
+                        <div class="skill-item" data-skill="75">
+                            <div class="skill-icon"><i class="fas fa-copyright"></i></div>
+                            <span class="skill-name">C / C++</span>
+                            <div class="skill-bar"><div class="skill-progress" data-width="75"></div></div>
+                        </div>
+                        <div class="skill-item" data-skill="88">
+                            <div class="skill-icon"><i class="fab fa-html5"></i></div>
+                            <span class="skill-name">HTML &amp; CSS</span>
+                            <div class="skill-bar"><div class="skill-progress" data-width="88"></div></div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Frameworks -->
+                <div class="skill-category animate-on-scroll">
+                    <h3 class="skill-category-title">
+                        <i class="fas fa-layer-group"></i>
+                        Frameworks &amp; Libraries
+                    </h3>
+                    <div class="skill-items">
+                        <div class="skill-item" data-skill="85">
+                            <div class="skill-icon"><i class="fas fa-brain"></i></div>
+                            <span class="skill-name">TensorFlow</span>
+                            <div class="skill-bar"><div class="skill-progress" data-width="85"></div></div>
+                        </div>
+                        <div class="skill-item" data-skill="88">
+                            <div class="skill-icon"><i class="fas fa-chart-bar"></i></div>
+                            <span class="skill-name">Scikit-Learn</span>
+                            <div class="skill-bar"><div class="skill-progress" data-width="88"></div></div>
+                        </div>
+                        <div class="skill-item" data-skill="82">
+                            <div class="skill-icon"><i class="fas fa-link"></i></div>
+                            <span class="skill-name">LangChain</span>
+                            <div class="skill-bar"><div class="skill-progress" data-width="82"></div></div>
+                        </div>
+                        <div class="skill-item" data-skill="86">
+                            <div class="skill-icon"><i class="fas fa-table"></i></div>
+                            <span class="skill-name">Pandas / NumPy</span>
+                            <div class="skill-bar"><div class="skill-progress" data-width="86"></div></div>
+                        </div>
+                        <div class="skill-item" data-skill="80">
+                            <div class="skill-icon"><i class="fas fa-eye"></i></div>
+                            <span class="skill-name">OpenCV</span>
+                            <div class="skill-bar"><div class="skill-progress" data-width="80"></div></div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Tools -->
+                <div class="skill-category animate-on-scroll">
+                    <h3 class="skill-category-title">
+                        <i class="fas fa-tools"></i>
+                        Tools &amp; Platforms
+                    </h3>
+                    <div class="skill-items-icons">
+                        <div class="skill-icon-item">
+                            <div class="skill-icon-box"><i class="fab fa-github"></i></div>
+                            <span>GitHub</span>
+                        </div>
+                        <div class="skill-icon-item">
+                            <div class="skill-icon-box"><i class="fas fa-code"></i></div>
+                            <span>VS Code</span>
+                        </div>
+                        <div class="skill-icon-item">
+                            <div class="skill-icon-box"><i class="fas fa-palette"></i></div>
+                            <span>Canva</span>
+                        </div>
+                        <div class="skill-icon-item">
+                            <div class="skill-icon-box"><i class="fab fa-windows"></i></div>
+                            <span>Windows</span>
+                        </div>
+                        <div class="skill-icon-item">
+                            <div class="skill-icon-box"><i class="fas fa-robot"></i></div>
+                            <span>Antigravity</span>
+                        </div>
+                        <div class="skill-icon-item">
+                            <div class="skill-icon-box"><i class="fas fa-i-cursor"></i></div>
+                            <span>Cursor</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Soft Skills -->
+                <div class="skill-category animate-on-scroll">
+                    <h3 class="skill-category-title">
+                        <i class="fas fa-users"></i>
+                        Soft Skills
+                    </h3>
+                    <div class="soft-skills-grid">
+                        <div class="soft-skill">
+                            <i class="fas fa-crown"></i>
+                            <span>Leadership</span>
+                        </div>
+                        <div class="soft-skill">
+                            <i class="fas fa-puzzle-piece"></i>
+                            <span>Problem-Solving</span>
+                        </div>
+                        <div class="soft-skill">
+                            <i class="fas fa-sync-alt"></i>
+                            <span>Adaptability</span>
+                        </div>
+                        <div class="soft-skill">
+                            <i class="fas fa-tasks"></i>
+                            <span>Management</span>
+                        </div>
+                        <div class="soft-skill">
+                            <i class="fas fa-clipboard-list"></i>
+                            <span>Effective Planning</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Work Section -->
+    <section class="section work" id="work">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-tag">Projects</span>
+                <h2 class="section-title">Projects</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card animate-on-scroll" data-tilt>
+                    <div class="project-card-inner">
+                        <div class="project-icon">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <div class="project-date">Jan 2026</div>
+                        <h3 class="project-title">Hybrid RAG Chatbot</h3>
+                        <p class="project-desc">
+                            A domain-specific AI chatbot for Medical &amp; Educational sectors using Sentence Transformers, FAISS vector database, and LangChain for retrieval-augmented generation.
+                        </p>
+                        <div class="project-tech">
+                            <span>LangChain</span>
+                            <span>FAISS</span>
+                            <span>Transformers</span>
+                            <span>Python</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/Himanshutomar03" target="_blank" rel="noopener" class="project-link">
+                                <i class="fab fa-github"></i>
+                                <span>Code</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 2 -->
+                <div class="project-card animate-on-scroll" data-tilt>
+                    <div class="project-card-inner">
+                        <div class="project-icon">
+                            <i class="fas fa-comments"></i>
+                        </div>
+                        <div class="project-date">Dec 2025</div>
+                        <h3 class="project-title">Sentiment Analysis</h3>
+                        <p class="project-desc">
+                            An end-to-end ML pipeline for analyzing social media sentiment trends using NLTK for text processing and Scikit-learn for classification.
+                        </p>
+                        <div class="project-tech">
+                            <span>NLTK</span>
+                            <span>Scikit-learn</span>
+                            <span>Python</span>
+                            <span>ML</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/Himanshutomar03" target="_blank" rel="noopener" class="project-link">
+                                <i class="fab fa-github"></i>
+                                <span>Code</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 3 -->
+                <div class="project-card animate-on-scroll" data-tilt>
+                    <div class="project-card-inner">
+                        <div class="project-icon">
+                            <i class="fas fa-heartbeat"></i>
+                        </div>
+                        <div class="project-date">Nov 2025</div>
+                        <h3 class="project-title">Disease Predictor GUI</h3>
+                        <p class="project-desc">
+                            A desktop application using Tkinter and Support Vector Machine (SVM) for symptom-based disease prediction with an intuitive GUI interface.
+                        </p>
+                        <div class="project-tech">
+                            <span>Tkinter</span>
+                            <span>SVM</span>
+                            <span>Python</span>
+                            <span>ML</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/Himanshutomar03" target="_blank" rel="noopener" class="project-link">
+                                <i class="fab fa-github"></i>
+                                <span>Code</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 4 -->
+                <div class="project-card animate-on-scroll" data-tilt>
+                    <div class="project-card-inner">
+                        <div class="project-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <div class="project-date">Sep 2025</div>
+                        <h3 class="project-title">Stock Price &amp; Portfolio Optimization</h3>
+                        <p class="project-desc">
+                            A financial analysis tool using Modern Portfolio Theory and XGBoost achieving 89% accuracy in stock price prediction and portfolio optimization.
+                        </p>
+                        <div class="project-tech">
+                            <span>XGBoost</span>
+                            <span>Pandas</span>
+                            <span>Python</span>
+                            <span>Finance</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/Himanshutomar03" target="_blank" rel="noopener" class="project-link">
+                                <i class="fab fa-github"></i>
+                                <span>Code</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resume Section -->
+    <section class="section cv" id="cv">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-tag">CV</span>
+                <h2 class="section-title">CV</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="resume-paper animate-on-scroll">
+                <!-- Resume Header -->
+                <div class="resume-header">
+                    <h2 class="resume-name">HIMANSHU TOMAR</h2>
+                    <p class="resume-subtitle">AI/ML Developer · B.Tech CSE · Punjab, India</p>
+                    <div class="resume-contact-row">
+                        <a href="mailto:himanshutomar297@gmail.com"><i class="fas fa-envelope"></i> himanshutomar297@gmail.com</a>
+                        <a href="https://github.com/Himanshutomar03" target="_blank" rel="noopener"><i class="fab fa-github"></i> github.com/Himanshutomar03</a>
+                        <a href="https://www.linkedin.com/in/himanshu-tomar0311/" target="_blank" rel="noopener"><i class="fab fa-linkedin-in"></i> linkedin.com/in/himanshu-tomar0311</a>
+                    </div>
+                </div>
+
+                <div class="resume-divider"></div>
+
+                <!-- Profile Summary -->
+                <div class="resume-section">
+                    <h3 class="resume-section-title">PROFILE SUMMARY</h3>
+                    <p class="resume-summary-text">
+                        AI/ML-focused Computer Science student with hands-on experience in building real-world machine learning and full-stack solutions. Strong in problem-solving, team collaboration, and delivering quality project outcomes from idea to implementation.
+                    </p>
+                </div>
+
+                <div class="resume-divider"></div>
+
+                <!-- Skills -->
+                <div class="resume-section">
+                    <h3 class="resume-section-title">SKILLS</h3>
+                    <div class="resume-skills-table">
+                        <div class="resume-skill-row">
+                            <span class="resume-skill-label">Languages</span>
+                            <span class="resume-skill-value">C++, Python, Java, JavaScript, SQL, HTML/CSS</span>
+                        </div>
+                        <div class="resume-skill-row">
+                            <span class="resume-skill-label">Frameworks</span>
+                            <span class="resume-skill-value">TensorFlow, Scikit-Learn, LangChain, Pandas, NumPy, OpenCV, FAISS</span>
+                        </div>
+                        <div class="resume-skill-row">
+                            <span class="resume-skill-label">Tools &amp; DBs</span>
+                            <span class="resume-skill-value">Git, GitHub, VS Code, Canva, Antigravity, Cursor</span>
+                        </div>
+                        <div class="resume-skill-row">
+                            <span class="resume-skill-label">Soft Skills</span>
+                            <span class="resume-skill-value">Problem-Solving, Leadership, Adaptability, Time Management, Teamwork</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="resume-divider"></div>
+
+                <!-- Education -->
+                <div class="resume-section">
+                    <h3 class="resume-section-title">EDUCATION</h3>
+                    <div class="resume-entry">
+                        <div class="resume-entry-left">
+                            <strong>B.Tech CSE — LPU</strong>
+                        </div>
+                        <div class="resume-entry-right">
+                            CGPA 6.94 · Aug 2023 – Present
+                        </div>
+                    </div>
+                </div>
+
+                <div class="resume-divider"></div>
+
+                <!-- Projects -->
+                <div class="resume-section">
+                    <h3 class="resume-section-title">PROJECTS</h3>
+                    <div class="resume-entry">
+                        <div class="resume-entry-left">
+                            <strong>Hybrid RAG Chatbot</strong>
+                        </div>
+                        <div class="resume-entry-right">
+                            AI/ML · Jan 2026
+                        </div>
+                    </div>
+                    <div class="resume-entry">
+                        <div class="resume-entry-left">
+                            <strong>Sentiment Analysis Pipeline</strong>
+                        </div>
+                        <div class="resume-entry-right">
+                            ML · Dec 2025
+                        </div>
+                    </div>
+                    <div class="resume-entry">
+                        <div class="resume-entry-left">
+                            <strong>Disease Predictor GUI</strong>
+                        </div>
+                        <div class="resume-entry-right">
+                            ML · Nov 2025
+                        </div>
+                    </div>
+                    <div class="resume-entry">
+                        <div class="resume-entry-left">
+                            <strong>Stock Price &amp; Portfolio Optimization</strong>
+                        </div>
+                        <div class="resume-entry-right">
+                            Finance/ML · Sep 2025
+                        </div>
+                    </div>
+                </div>
+
+                <div class="resume-divider"></div>
+
+                <!-- Certifications -->
+                <div class="resume-section">
+                    <h3 class="resume-section-title">CERTIFICATIONS</h3>
+                    <div class="resume-entry">
+                        <div class="resume-entry-left">
+                            <strong>Oracle AI Foundations Associate</strong>
+                        </div>
+                        <div class="resume-entry-right">Mar 2026</div>
+                    </div>
+                    <div class="resume-entry">
+                        <div class="resume-entry-left">
+                            <strong>Generative AI &amp; LangChain — Udemy</strong>
+                        </div>
+                        <div class="resume-entry-right">2025</div>
+                    </div>
+                    <div class="resume-entry">
+                        <div class="resume-entry-left">
+                            <strong>Python for ML &amp; Data Science — Udemy</strong>
+                        </div>
+                        <div class="resume-entry-right">2025</div>
+                    </div>
+                    <div class="resume-entry">
+                        <div class="resume-entry-left">
+                            <strong>ML Training — Centre for Professional Enhancement</strong>
+                        </div>
+                        <div class="resume-entry-right">2024</div>
+                    </div>
+                </div>
+
+                <!-- Download CTA -->
+                <div class="resume-footer">
+                    <p>FOR DOWNLOADING THE FULL CV, CLICK ON DOWNLOAD</p>
+                </div>
+            </div>
+            <div class="cv-download animate-on-scroll">
+                <a href="HimanshuTomarCV.pdf" target="_blank" rel="noopener" class="btn btn-primary btn-large">
+                    <i class="fas fa-download"></i>
+                    <span>Download Full CV</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section class="section certifications" id="certifications">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-tag">Certificates</span>
+                <h2 class="section-title">Certificates</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="cert-gallery">
+                <div class="cert-card animate-on-scroll" data-preview="cert_oracle.png" data-preview-type="image">
+                    <div class="cert-card-image">
+                        <img src="cert_oracle.png" alt="Oracle AI Foundations Certificate" loading="lazy">
+                        <div class="cert-card-overlay">
+                            <i class="fas fa-search-plus"></i>
+                            <span>Click to view</span>
+                        </div>
+                    </div>
+                    <div class="cert-card-info">
+                        <div class="cert-icon"><i class="fas fa-award"></i></div>
+                        <div>
+                            <h4>Oracle AI Foundations</h4>
+                            <p>Oracle Certified AI Foundations Associate — March 2026</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="cert-card animate-on-scroll" data-preview="cert_ml_ds.png" data-preview-type="image">
+                    <div class="cert-card-image">
+                        <img src="cert_ml_ds.png" alt="ML & Data Science Certificate" loading="lazy">
+                        <div class="cert-card-overlay">
+                            <i class="fas fa-search-plus"></i>
+                            <span>Click to view</span>
+                        </div>
+                    </div>
+                    <div class="cert-card-info">
+                        <div class="cert-icon"><i class="fab fa-python"></i></div>
+                        <div>
+                            <h4>Python for ML &amp; DS</h4>
+                            <p>Machine Learning and Data Science Masterclass — Udemy</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="cert-card animate-on-scroll" data-preview="cert_genai.png" data-preview-type="image">
+                    <div class="cert-card-image">
+                        <img src="cert_genai.png" alt="Generative AI Certificate" loading="lazy">
+                        <div class="cert-card-overlay">
+                            <i class="fas fa-search-plus"></i>
+                            <span>Click to view</span>
+                        </div>
+                    </div>
+                    <div class="cert-card-info">
+                        <div class="cert-icon"><i class="fas fa-robot"></i></div>
+                        <div>
+                            <h4>Generative AI &amp; LangChain</h4>
+                            <p>Complete Generative AI with LangChain &amp; Huggingface — Udemy</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="cert-card animate-on-scroll" data-preview="cert_ml_training.png" data-preview-type="image">
+                    <div class="cert-card-image">
+                        <img src="cert_ml_training.png" alt="ML Training Certificate" loading="lazy">
+                        <div class="cert-card-overlay">
+                            <i class="fas fa-search-plus"></i>
+                            <span>Click to view</span>
+                        </div>
+                    </div>
+                    <div class="cert-card-info">
+                        <div class="cert-icon"><i class="fas fa-brain"></i></div>
+                        <div>
+                            <h4>ML Training</h4>
+                            <p>6-Weeks Training in Machine Learning — CPE</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="cert-card animate-on-scroll" data-preview="cert_ml_training_2.png" data-preview-type="image">
+                    <div class="cert-card-image">
+                        <img src="cert_ml_training_2.png" alt="ML Training Certificate 2" loading="lazy">
+                        <div class="cert-card-overlay">
+                            <i class="fas fa-search-plus"></i>
+                            <span>Click to view</span>
+                        </div>
+                    </div>
+                    <div class="cert-card-info">
+                        <div class="cert-icon"><i class="fas fa-brain"></i></div>
+                        <div>
+                            <h4>ML Training — Advanced</h4>
+                            <p>Machine Learning Certification — Professional Enhancement</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="cert-card animate-on-scroll" data-preview="6197ad00-e169-4c35-a59e-4b9067ed3b8d.png" data-preview-type="image">
+                    <div class="cert-card-image">
+                        <img src="6197ad00-e169-4c35-a59e-4b9067ed3b8d.png" alt="Code-A-Hunt Hackathon Certificate" loading="lazy">
+                        <div class="cert-card-overlay">
+                            <i class="fas fa-search-plus"></i>
+                            <span>Click to view</span>
+                        </div>
+                    </div>
+                    <div class="cert-card-info">
+                        <div class="cert-icon"><i class="fas fa-trophy"></i></div>
+                        <div>
+                            <h4>Code-A-Hunt Hackathon</h4>
+                            <p>Certificate of Participation — CodingBlocks LPU, March 2024</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Beyond Academics Section -->
+    <section class="section activities" id="activities">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-tag">Extra Curricular Activities</span>
+                <h2 class="section-title">Extra Curricular Activities</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="activities-grid">
+                <div class="activity-card animate-on-scroll">
+                    <div class="activity-icon">
+                        <i class="fas fa-trophy"></i>
+                    </div>
+                    <h3>Hackathon Participant</h3>
+                    <p>
+                        Actively participated in multiple hackathons, building innovative solutions under tight deadlines. Experienced in rapid prototyping, team collaboration, and pitching ideas to judges.
+                    </p>
+                    <div class="activity-tags">
+                        <span>Team Building</span>
+                        <span>Rapid Prototyping</span>
+                        <span>Innovation</span>
+                    </div>
+                </div>
+                <div class="activity-card animate-on-scroll">
+                    <div class="activity-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Competitive Programming</h3>
+                    <p>
+                        Regular problem solver on platforms like LeetCode and HackerRank. Focused on data structures, algorithms, and optimizing solutions for efficiency and scalability.
+                    </p>
+                    <div class="activity-tags">
+                        <span>LeetCode</span>
+                        <span>HackerRank</span>
+                        <span>DSA</span>
+                    </div>
+                </div>
+                <div class="activity-card animate-on-scroll">
+                    <div class="activity-icon">
+                        <i class="fas fa-code-branch"></i>
+                    </div>
+                    <h3>Open Source Contributor</h3>
+                    <p>
+                        Contributing to open-source projects on GitHub, collaborating with developers worldwide. Passionate about building tools and libraries that benefit the community.
+                    </p>
+                    <div class="activity-tags">
+                        <span>GitHub</span>
+                        <span>Collaboration</span>
+                        <span>Open Source</span>
+                    </div>
+                </div>
+                <div class="activity-card animate-on-scroll">
+                    <div class="activity-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Community &amp; Events</h3>
+                    <p>
+                        Active member of technical communities and coding clubs. Engaged in workshops, tech talks, and peer learning sessions to stay updated with industry trends.
+                    </p>
+                    <div class="activity-tags">
+                        <span>Workshops</span>
+                        <span>Tech Talks</span>
+                        <span>Networking</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section class="section education" id="education">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-tag">Education</span>
+                <h2 class="section-title">Education</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="resume-paper animate-on-scroll">
+                <div class="resume-section">
+                    <h3 class="resume-section-title">EDUCATION DETAILS</h3>
+                    <div class="resume-entry">
+                        <div class="resume-entry-left">
+                            <strong>B.Tech CSE — Lovely Professional University</strong>
+                        </div>
+                        <div class="resume-entry-right">CGPA 6.94 · Aug 2023 – Present</div>
+                    </div>
+                    <div class="resume-entry">
+                        <div class="resume-entry-left">
+                            <strong>Class XII — Senior Secondary</strong>
+                        </div>
+                        <div class="resume-entry-right">Completed</div>
+                    </div>
+                    <div class="resume-entry">
+                        <div class="resume-entry-left">
+                            <strong>Class X — Secondary</strong>
+                        </div>
+                        <div class="resume-entry-right">Completed</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact" id="contact">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-tag">Contact Me</span>
+                <h2 class="section-title">Contact Me</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info animate-on-scroll">
+                    <h3>Let's work together</h3>
+                    <p>I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision.</p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                            <div>
+                                <span class="contact-label">Email</span>
+                                <a href="mailto:himanshutomar297@gmail.com">himanshutomar297@gmail.com</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon"><i class="fas fa-phone"></i></div>
+                            <div>
+                                <span class="contact-label">Phone</span>
+                                <a href="tel:+916398436638">+91-6398436638</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon"><i class="fas fa-location-dot"></i></div>
+                            <div>
+                                <span class="contact-label">Location</span>
+                                <span>Punjab, India</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-socials">
+                        <a href="https://github.com/Himanshutomar03" target="_blank" rel="noopener" class="social-btn" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/himanshu-tomar0311/" target="_blank" rel="noopener" class="social-btn" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="mailto:himanshutomar297@gmail.com" class="social-btn" aria-label="Email">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="contact-form-wrapper animate-on-scroll">
+                    <form class="contact-form" id="contact-form">
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" name="name" placeholder="John Doe" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Your Email</label>
+                            <input type="email" id="email" name="email" placeholder="john@example.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Your Message</label>
+                            <textarea id="message" name="message" rows="5" placeholder="Hello Himanshu, I'd like to talk about..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-large" id="submit-btn">
+                            <span>Send Message</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certificate Preview Modal -->
+    <div class="cert-modal-overlay" id="cert-modal-overlay">
+        <div class="cert-modal">
+            <button class="cert-modal-close" id="cert-modal-close">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="cert-modal-content" id="cert-modal-content">
+                <!-- Preview content injected by JS -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <span class="logo-text">HT</span>
+                    <p>Designed &amp; Built by Himanshu Tomar</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#about">About</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#work">Projects</a>
+                    <a href="#cv">CV</a>
+                    <a href="#certifications">Certificates</a>
+                    <a href="#activities">Extra Curricular Activities</a>
+                    <a href="#education">Education</a>
+                    <a href="#contact">Contact Me</a>
+                </div>
+                <div class="footer-socials">
+                    <a href="https://github.com/Himanshutomar03" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/himanshu-tomar0311/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Himanshu Tomar. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
