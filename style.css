@@ -740,6 +740,12 @@ body:hover .cursor-glow {
     overflow: hidden;
 }
 
+.about-profile-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
 .about-img-border {
     position: absolute;
     top: 15px;
